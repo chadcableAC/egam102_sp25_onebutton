@@ -82,11 +82,11 @@ public class EnemyManager : MonoBehaviour
 
             // Which wave type?
             List<EnemyWave> waves = easyWaves;
-            if (waveCount > mediumWaveCount)
+            if (waveCount >= mediumWaveCount)
             {
                 waves = hardWaves;
             }
-            if (waveCount > easyWaveCount)
+            if (waveCount >= easyWaveCount)
             {
                 waves = mediumWaves;
             }
